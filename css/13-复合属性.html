@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 想让div里面的文字变倾斜 加粗 字号设置为16像素 微软雅黑 */
+        /* 一般写法 */
+        /* div {
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        font-family: '微软雅黑';
+    } */
+
+        /* 复合属性：简写的方式 */
+        div {
+            /* font: font-style font-weight font-size font-family */
+            /* 顺序不能颠倒，必须保留font-size font-family */
+            font: italic 700 16px '微软雅黑'
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>《shall we talk》</h2>
+        <p>明月光</p>
+        <p>为何未照地堂</p>
+        <p>宁愿在公园躲藏不想喝汤</p>
+        <p>任由目光留在漫画一角</p>
+    </div>
+</body>
+
+</html>

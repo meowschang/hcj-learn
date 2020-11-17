@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <!-- name是表单元素的名字，这里表单单选按钮必须有相同的name，才可以实现多选 -->
+    <!-- tetx文本框 用户可以在里面输入任何文字 -->
+       用户名：<input type="text" name="username" maxlength="6" value="请输入用户名：">
+        <br>
+
+    <!-- passwo 密码框 用户看不见输入的密码 -->
+       密码&emsp;：<input type="password" name="mima" value="请输入密码"><br>
+
+    <!-- radio 单选按钮 可以实现多选一 -->
+        <!-- 单选按钮和复选框可以设置checke属性，当页面打开时可以默认选中这个按钮 -->
+         
+       性别：男<input type="radio" name="sex" checked="checked">  女<input type="radio" name="sex">
+
+    <!-- checkbox 复选框 可以实现多选多 -->
+       爱好：吃饭<input type="checkbox"> 
+             睡觉<input type="checkbox">
+             游戏<input type="checkbox">             
+            <br>
+
+     <!-- 点击了提交按钮，可以把表单域form里面的表单元素里面的值提交给后台服务器 -->
+             <input type="submit" value="注册"> 
+             
+     <!-- 重置按钮 -->
+             <input type="reset" >
+
+             <!-- 普通按钮 -->
+             <input type="button" value="验证码"><br>
+             <!-- 上传文件 -->
+             上传头像<input type="file" value="选择图片" >
+
+             
+    </form>
+</body>
+</html>
