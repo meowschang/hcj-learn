@@ -1,3 +1,4 @@
 输入标签名称，按下tab键补全标签
 ctrl+/ 注释
 选中代码 ctrl+k再ctrl+f 自动对齐
+alt+shift+下键   将本行代码复制到下一行
