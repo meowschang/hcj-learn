@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            width: 150px;
+            height: 50px;
+            background-color: pink;
+            /* 重点：把行内元素a转换为块级元素 */
+            display: block;
+
+        }
+
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: chartreuse;
+            /* 把块级元素转换为行内元素 */
+            display: inline;
+        }
+
+        span {
+            width: 500px;
+            height: 25px;
+            background-color: rgb(223, 64, 64);
+            /* 把行内元素转换为行内块元素(一般不用) */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">虎口脱险</a>
+    <a href="#">鹿港小镇</a>
+    <div>堂吉诃德</div>
+    <div>堂吉诃德</div>
+    <span>行内元素转换为行内块元素</span>
+    <span>行内元素转换为行内块元素</span>
+
+
+</body>
+
+</html>

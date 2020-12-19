@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    链接伪类选择器注意事项<br>
+    1.为了确保生效，请按照LVH的循顺序声明:link - :visited - :hover - :active。<br>
+    2.记忆法 : love hate或者lv包包hao。<br>
+    3.因为a链接在浏览器中具有默认样式，所以我们实际工作中都需要给链接单独指定样式。<br>
+    链接伪类选择器实际工作开发中的写法︰<br>
+    a是标签选择器所有的链接<br>
+    a {<br>
+    color: gray;<br>
+    }<br>
+    hover是链接伪类选择器鼠标经过<br>
+    a : hover {<br>
+    color: red;鼠标经过的时候，由原来的灰色变成了红色<br>
+    }
+
+</body>
+
+</html>
