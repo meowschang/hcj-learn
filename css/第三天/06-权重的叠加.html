@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 复合选择器会有权重叠加的问题 */
+        /* 权重虽然会叠加，但是永远不会有进位的问题 */
+        li {
+            color: red;
+        }
+
+        /* ul li权重为0.0.0.0+0.0.0.1=0.0.0.2   2*/
+        ul li {
+            color: green;
+        }
+
+        /* .nav li权重0.0.1.0+0.0.0.1=0.0.1.1    11  */
+        .nav li {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li>再见杰克</li>
+        <li>为你唱首歌</li>
+        <li>痛仰乐队</li>
+    </ul>
+</body>
+
+</html>

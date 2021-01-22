@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 设计一个200x200的盒子，但是这个盒子有10像素的红色边框 -->
+    <style>
+        div {
+            width: 180px;
+            height: 180px;
+            background-color: pink;
+            border: 10px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div> </div>
+    <p>1.5边框会影响盒子实际大小<br>
+        边框会额外增加盒子的实际大小。因此我们有两种方案解决:<br>
+        1．测量盒子大小的时候不量边框.<br>
+        2．如果测量的时候包含了边框,则需要width/height减去边框宽度<br>
+    </p>
+</body>
+
+</html>

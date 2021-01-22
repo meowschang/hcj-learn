@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #father {
+            color: red;
+        }
+
+        /* p继承的权重为0 */
+        /* 所以以后我们看标签到底执行哪个样式，就先看标签有没有直接被选出来 */
+        p {
+            color: pink;
+        }
+
+        body {
+            color: red;
+        }
+
+        /* a链接被浏览器默认指定了一个样式：蓝色带下划线a{color:blue;}  */
+        a {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="father">
+        <p>
+            优先级注意点:
+            1.权重是有4组数字组成，但是不会有进位。
+            2.可以理解为类选择器永远大于元索选择器id选择器永远大于类选择器,以此类推...
+            3.等级判断从左向右,如果某一位数值相同,则判断下一位数值。
+            4.可以简单记忆法:通配符和继承权重为0,标签选择器为1,类(伪类)选择器为10, id选择器100,行内样式表为
+            1000, !important无穷大.
+            5.继承的权重是0 ,如果该元素没有直接选中,不管父元素权重多高,子元索得到的权重都是0。
+        </p>
+    </div>
+    <a href="#">我是单独的样式</a>
+</body>
+
+</html>
