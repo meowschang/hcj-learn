@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+            margin-top: 50px;
+
+            /* 01可以为父元素定义上边框 */
+            border: 1px solid transparent;
+            /* 02可以为父元素定义上内边距 */
+            /* 03可以为父元素添加overflow: hidden; */
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <h4>
+        使用margi定义块元素的垂直外边距时，可能会出现外边距的合并<br>
+        对于两个嵌套关系(父子关系)的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会塌陷较大的外边距值。<br>
+        解决方案:<br>
+        01可以为父元素定义上边框。<br>
+        02可以为父元素定义上内边距。<br>
+        03可以为父元素添加overflow:hidden。<br>
+
+    </h4>
+</body>
+
+</html>
